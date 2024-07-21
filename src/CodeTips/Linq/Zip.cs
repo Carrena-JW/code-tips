@@ -14,9 +14,24 @@ namespace CodeTips.Linq
             var names = new[] { "Ssam", "Jhon", "Smith", "Alice" };
             var ages = new[] { 20, 25, 31, 55 };
 
-            var pairs = names.Zip(ages, (name, age) => (name, age));
+            var pairsWithTuple = names.Zip(ages, (name, age) => (name, age));
 
-            pairs.Dump(); 
+
+            var pairsWithClass = names.Zip(ages, (name, age) => new NameAngAge
+            {
+                Name= name,
+                Age = age,
+            });
+
+            pairsWithTuple.Dump();
+
+            pairsWithClass.Dump();
         }
+    }
+
+    public class NameAngAge()
+    {
+        public string Name { get; set; } = string.Empty;
+        public int Age { get; set; } 
     }
 }
