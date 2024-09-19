@@ -4,6 +4,8 @@
 using CodeTips.Linq;
 using CodeTips.Parse;
 using CodeTips.Regexs;
+using CodeTips.Windows;
+using Dumpify;
 
 //var zipExample = new Zip();
 //zipExample.Exmaple1();
@@ -14,8 +16,10 @@ using CodeTips.Regexs;
 
 
 
-new EmailAddressValidation().Example();
+//new EmailAddressValidation().Example();
 
+var isNTFS = new NTFS().IsNTFS("D:\\workspace\\TestWatchFolder");
 
+isNTFS.Dump();
 
 Console.ReadKey();
