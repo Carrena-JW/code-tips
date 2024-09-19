@@ -15,18 +15,18 @@
         }
 
         // ADS (파일변조??), 특정 메타 데이터를 저장 할 수 있음
-        internal void WriteToADS(string filePath, string streamName, string data)
+        internal void WriteToADS(string filePath, string inputData)
         {
             var pathWithStreamTag = GenerateFilePathWithStreamTag(filePath);
 
             using (FileStream fs = new FileStream(pathWithStreamTag, FileMode.Create, FileAccess.Write))
             using (StreamWriter writer = new StreamWriter(fs))
             {
-                writer.Write(data);
+                writer.Write(inputData);
             }
         }
 
-        internal string ReadFromADS(string filePath, string streamName)
+        internal string ReadFromADS(string filePath)
         {
             string data = string.Empty;
             try
