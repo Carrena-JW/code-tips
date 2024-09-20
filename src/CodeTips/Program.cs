@@ -18,7 +18,50 @@
 
 
 
+using CodeTips.TestSutff;
 using System.Diagnostics;
+
+
+
+
+#region [Enum test]
+
+
+((int)TestEnum.test).Dump();
+((int)TestEnum.test1).Dump();
+((int)TestEnum.test2).Dump();
+((int)TestEnum.test3).Dump();
+((int)TestEnum.test4).Dump();
+
+Enum.Parse(typeof(TestEnum), "test").Dump();
+Enum.Parse(typeof(TestEnum), "test1").Dump();
+Enum.Parse(typeof(TestEnum), "test2").Dump();
+Enum.Parse(typeof(TestEnum), "test3").Dump();
+
+
+nameof(TestEnum.test).Dump();
+nameof(TestEnum.test1).Dump();
+nameof(TestEnum.test2).Dump();
+nameof(TestEnum.test3).Dump();
+nameof(TestEnum.test4).Dump();
+
+
+
+nameof(TestEnum.test).Dump();
+nameof(TestEnum.test1).Dump();
+nameof(TestEnum.test2).Dump();
+nameof(TestEnum.test3).Dump();
+nameof(TestEnum.test4).Dump();
+
+
+#endregion
+
+
+
+
+
+return;
+
 
 Func<(string, string)> createDummyFile = () =>
 {
