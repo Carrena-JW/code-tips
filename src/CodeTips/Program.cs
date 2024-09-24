@@ -22,7 +22,33 @@ using CodeTips.TestSutff;
 using System.Diagnostics;
 
 
+#region [Parse Datetime any format]
 
+var parser = new ParseDatetime();
+
+var inputAnyFormat = new List<string>
+{
+    "2/3/2021",
+    "2024-12-03",
+    "20241203",
+    "2024.12.03"
+};
+
+inputAnyFormat.ForEach(x =>
+{
+    parser.Example2(x);
+    parser.Example3(x);
+});
+
+
+
+
+
+#endregion
+
+
+
+return;
 
 #region [Enum test]
 
