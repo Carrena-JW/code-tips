@@ -9,9 +9,6 @@
 
   <ItemGroup>
     <PackageReference Include="Dumpify" Version="0.6.6" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
     <PackageReference Include="Ulid" Version="1.3.4" />
   </ItemGroup>
