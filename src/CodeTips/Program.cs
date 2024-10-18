@@ -21,6 +21,20 @@
 using CodeTips.TestSutff;
 using System.Diagnostics;
 
+ 
+
+
+
+
+
+
+var today = DateTime.Today;
+
+today.ToString("yyyy-MM-ddTHH:mm:ss.fffzzz").Dump();
+
+
+
+return;
 
 #region [Parse Datetime any format]
 
